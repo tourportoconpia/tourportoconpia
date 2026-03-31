@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recomendaciones exclusivas de Porto por tu guía turística. Descubre los mejores restaurantes, lugares y consejos locales.">
+    <title>Porto con Pia - Recomendaciones Locales</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="assets/pia-intro.png" alt="Pia - Guía turística de Porto" class="pia-photo">
+                </div>
+                <div class="hero-text">
+                    <h1 class="fade-in">¡Gracias por explorar Porto conmigo! 🇵🇹</h1>
+                    <p class="hero-subtitle fade-in-delay-1">Espero que hayas disfrutado el tour tanto como yo disfruté compartirlo contigo. Aquí están mis recomendaciones especiales para que sigas descubriendo la ciudad.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section class="review-cta primary-cta">
+        <div class="container">
+            <div class="cta-card fade-in-delay-2">
+                <h2>✨ ¡Ayúdame con tu reseña!</h2>
+                <p class="cta-text">Tu opinión es <strong>super importante</strong> para mí. Cada reseña me ayuda a seguir haciendo lo que me encanta! 🙏</p>
+                <div class="review-buttons">
+                    <a href="https://www.tripadvisor.es/UserReviewEdit-g189180-d25382579-The_Unvanquished_Tour_in_Porto_City_Center-Porto_Porto_District_Northern_Portugal.html" target="_blank" rel="noopener" class="btn btn-primary">
+                        <span class="btn-icon">⭐</span>
+                        Dejar reseña en TripAdvisor
+                    </a>
+                </div>
+                <div class="name-reminder">
+                    <p class="reminder-title">💡 <strong>¡MUY IMPORTANTE!</strong></p>
+                    <p class="reminder-text">Por favor, <strong>menciona "Pia"</strong> en tu reseña para que reciba el crédito por el tour. Puedes escribir algo como:</p>
+                    <div class="example-text">
+                        <p>"Excelente tour <strong>con Pia</strong>!"</p>
+                        <p>"El tour fue <strong>fantástico con Pia</strong>..."</p>
+                        <p>"Tour increíble gracias a <strong>Pia</strong>..."</p>
+                    </div>
+                    <div class="copy-help-section">
+                        <p class="copy-help-text">💡 <strong>Opción rápida:</strong> Copia y pega este texto:</p>
+                        <div class="copy-text-container">
+                            <code id="review-text">Excelente tour con Pia! Guía fantástica que muestra lo mejor de Porto con pasión y conocimiento. ¡100% recomendado! ⭐⭐⭐⭐⭐</code>
+                            <button onclick="copyReviewText()" class="copy-btn">
+                                📋 Copiar
+                            </button>
+                        </div>
+                        <p class="copy-success" id="copy-success">¡Texto copiado! 🎉</p>
+                    </div>
+                </div>
+                <p class="cta-footnote">¡Solo toma 2 minutos y hace toda la diferencia! 💙</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mis Recomendaciones en Porto</h2>
+                <p>He seleccionado cuidadosamente los mejores lugares para ti</p>
+            </div>
+
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all" aria-pressed="true">Todas</button>
+                <button class="tab-btn" data-category="restaurantes" aria-pressed="false">Restaurantes</button>
+                <button class="tab-btn" data-category="museos" aria-pressed="false">Museos</button>
+                <button class="tab-btn" data-category="parques" aria-pressed="false">Parques</button>
+                <button class="tab-btn" data-category="dicas" aria-pressed="false">Consejos</button>
+            </div>
+
+            <div id="recommendations-grid" class="recommendations-grid">
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Quieres descubrir más de Porto?</h2>
+                <p>¡Reserva uno de mis tours favoritos y no olvides mencionar mi nombre! 🌟</p>
+            </div>
+
+            <div class="booking-grid">
+                <div class="tour-card">
+                    <div class="tour-header">
+                        <h3>FreeTour Centro de Porto</h3>
+                        <span class="tour-badge">⭐ Más Popular</span>
+                    </div>
+                    <div class="tour-content">
+                        <p class="tour-description">
+                            Descubre el corazón histórico de Porto. Desde la estación de São Bento hasta la Torre dos Clérigos, 
+                            pasando por lugares secretos que solo los locales conocen.
+                        </p>
+                        <ul class="tour-highlights">
+                            <li>📍 Estación de São Bento</li>
+                            <li>⛪ Iglesia de los Clérigos</li>
+                            <li>📚 Librería Lello (vista exterior)</li>
+                            <li>🏛️ Plaza de la Libertad</li>
+                        </ul>
+                        <div class="tour-details">
+                            <span class="detail-item">⏰ 2.5 horas</span>
+                            <span class="detail-item">🚶 3km</span>
+                        </div>
+                    </div>
+                    <div class="tour-booking">
+                        <div class="referral-note">
+                            <p>💡 <strong>Importante:</strong> Al reservar, indica "Pia" como tu guía recomendada</p>
+                        </div>
+                        <a href="https://app.turitop.com/booking/box/T1091/P22/es/0/0/0/0?loading=1" target="_blank" rel="noopener" class="btn btn-primary">
+                            Reservar Ahora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-header">
+                        <h3>FreeTour de la Ribeira</h3>
+                        <span class="tour-badge">🌊 Río Duero</span>
+                    </div>
+                    <div class="tour-content">
+                        <p class="tour-description">
+                            Explora la zona más emblemática de Porto junto al río Duero. Puentes históricas, bodegas de vino 
+                            y las mejores vistas de la ciudad.
+                        </p>
+                        <ul class="tour-highlights">
+                            <li>🌉 Puente Luis I</li>
+                            <li>🏘️ Barrio de la Ribeira</li>
+                            <li>🍷 Vistas de las bodegas</li>
+                            <li>📸 Puntos fotográficos únicos</li>
+                        </ul>
+                        <div class="tour-details">
+                            <span class="detail-item">⏰ 2 horas</span>
+                            <span class="detail-item">🚶 2.5km</span>
+                        </div>
+                    </div>
+                    <div class="tour-booking">
+                        <div class="referral-note">
+                            <p>💡 <strong>Importante:</strong> Al reservar, indica "Pia" como tu guía recomendada</p>
+                        </div>
+                        <a href="https://app.turitop.com/booking/box/T1091/P53/es/0/0/0/0?loading=1" target="_blank" rel="noopener" class="btn btn-primary">
+                            Reservar Ahora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-header">
+                        <h3>FreeTour de Harry Potter</h3>
+                        <span class="tour-badge">🧙‍♂️ Mágico</span>
+                    </div>
+                    <div class="tour-content">
+                        <p class="tour-description">
+                            Sigue los pasos de J.K. Rowling en Porto. Descubre los lugares que inspiraron el mundo 
+                            mágico de Harry Potter y las conexiones secretas de la ciudad.
+                        </p>
+                        <ul class="tour-highlights">
+                            <li>📚 Librería Lello</li>
+                            <li>🏫 Universidad de Porto</li>
+                            <li>⚡ Café Majestic</li>
+                            <li>🧙‍♀️ Lugares inspiradores</li>
+                        </ul>
+                        <div class="tour-details">
+                            <span class="detail-item">⏰ 2 horas</span>
+                            <span class="detail-item">🚶 2km</span>
+                        </div>
+                    </div>
+                    <div class="tour-booking">
+                        <div class="referral-note">
+                            <p>💡 <strong>Importante:</strong> Al reservar, indica "Pia" como tu guía recomendada</p>
+                        </div>
+                        <a href="https://app.turitop.com/booking/box/T1091/P26/es/0/0/0/0?loading=1" target="_blank" rel="noopener" class="btn btn-primary">
+                            Reservar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-help">
+                <div class="help-card">
+                    <h3>🤔 ¿Cómo reservar?</h3>
+                    <ol>
+                        <li>Clica en "Reservar Ahora" para el tour que prefieras</li>
+                        <li>Elige la fecha y hora disponibles</li>
+                        <li>En el formulario de reserva, busca el campo <strong>"¿Te lo ha recomendado un guía?"</strong></li>
+                        <li>Escribe <strong>"Pia"</strong> en ese campo</li>
+                        <li>¡Confirma y listo! 🎉</li>
+                    </ol>
+                    <p class="help-note">
+                        <strong>¿Por qué es importante?</strong> Así mi empresa sabe que tú vienes por mi recomendación 
+                        y puedo seguir haciendo lo que más me gusta: ¡mostrar Porto a gente como tú! 🙏
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-cta secondary-cta">
+        <div class="container">
+            <div class="cta-card-simple">
+                <h3>¿Te gustaron las recomendaciones? 💛</h3>
+                <p>¡No olvides dejar tu reseña - significa el mundo para mí!</p>
+                <div class="review-buttons-compact">
+                    <a href="https://www.tripadvisor.es/UserReviewEdit-g189180-d25382579-The_Unvanquished_Tour_in_Porto_City_Center-Porto_Porto_District_Northern_Portugal.html" target="_blank" rel="noopener" class="btn btn-primary-small">TripAdvisor ⭐</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Hecho con ❤️ en Porto</p>
+            <p class="footer-contact">¿Tienes alguna pregunta? ¡Envíame un mensaje!</p>
+            <div class="whatsapp-contact">
+                <a href="https://wa.me/351932293883" target="_blank" rel="noopener" class="btn-whatsapp">
+                    <span class="whatsapp-icon">💬</span>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

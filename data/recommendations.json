@@ -1,0 +1,948 @@
+{
+  "recommendations": [
+    {
+      "id": 1,
+      "title": "Cantinho do Avillez",
+      "category": "restaurantes",
+      "icon": "🍽️",
+      "description": "Restaurante del chef José Avillez con platos tradicionales portugueses reinventados. Ambiente acogedor y de alta calidad.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Mouzinho da Silveira, 166"
+        },
+        {
+          "icon": "⏰",
+          "text": "Reserva recomendada"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Cantinho+do+Avillez+Porto"
+    },
+    {
+      "id": 2,
+      "title": "Café Santiago",
+      "category": "restaurantes",
+      "icon": "🥪",
+      "description": "¡Excelente lugar para probar la famosa Francesinha! Auténtico, tradicional y siempre lleno de locales - eso lo dice todo.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua de Passos Manuel, 226"
+        },
+        {
+          "icon": "",
+          "text": "Especialidad: Francesinha"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Café+Santiago+Porto"
+    },
+    {
+      "id": 3,
+      "title": "Livraria Lello",
+      "category": "locais",
+      "icon": "📚",
+      "description": "¡Una de las librerías más hermosas del mundo! Inspiración para Harry Potter. Compra el billete online para evitar filas enormes.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua das Carmelitas, 144"
+        },
+        {
+          "icon": "⏰",
+          "text": "Compra online anticipadamente"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Livraria+Lello+Porto"
+    },
+    {
+      "id": 4,
+      "title": "Jardines del Palacio de Cristal",
+      "category": "parques",
+      "icon": "🌳",
+      "description": "¡Vista impresionante sobre el río Duero! Perfecto para un paseo relajante al final de la tarde o picnic. ¡Entrada gratuita!",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua de Dom Manuel II"
+        },
+        {
+          "icon": "🌅",
+          "text": "Mejor al atardecer"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Jardins+Palácio+Cristal+Porto"
+    },
+    {
+      "id": 5,
+      "title": "Paseo en Barco por el Duero",
+      "category": "dicas",
+      "icon": "⛵",
+      "description": "¡Experiencia imperdible! ¡Ve los 6 puentes de Porto desde el río! Hay opciones de 50min (Puentes) o día completo (Valle del Duero).",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Cais da Ribeira"
+        },
+        {
+          "icon": "⏰",
+          "text": "Varias empresas disponibles"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Paseo+Barco+Douro+Porto"
+    },
+    {
+      "id": 7,
+      "title": "Usa el transporte público",
+      "category": "dicas",
+      "icon": "🚇",
+      "description": "¡Compra la tarjeta Andante y carga viajes! El metro y autobuses son eficientes.",
+      "details": [
+        {
+          "icon": "🎫",
+          "text": "Válido 1h con transferencias"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Prueba los Pasteles de Nata",
+      "category": "restaurantes",
+      "icon": "🥐",
+      "description": "¡Ve a Manteigaria (Rua Alexandre Braga) - están hechos al momento y siempre calientes! ¡Mejor con canela!",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Alexandre Braga, 24"
+        },
+        {
+          "icon": "🔥",
+          "text": "Hechos al momento"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Manteigaria+Porto"
+    },
+    {
+      "id": 9,
+      "title": "Mercado del Bolhão",
+      "category": "museos",
+      "icon": "🏪",
+      "description": "Mercado tradicional recientemente renovado. ¡Excelente para sentir la atmósfera local, comprar productos frescos y probar tapas!",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Formosa"
+        },
+        {
+          "icon": "🥘",
+          "text": "Varios restaurantes en planta alta"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Mercado+Bolhão+Porto"
+    },
+    {
+      "id": 10,
+      "title": "Mercado Beira-Rio",
+      "category": "museos",
+      "icon": "🏪",
+      "description": "Mercado en Gaia con vista al río. Ambiente local con productos frescos y restaurantes tradicionales.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Vila Nova de Gaia"
+        },
+        {
+          "icon": "🌊",
+          "text": "Vista al río"
+        },
+        {
+          "icon": "🍽️",
+          "text": "Restaurantes locais"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Mercado+Beira-Rio+Gaia"
+    },
+    {
+      "id": 11,
+      "title": "Mercado do Bom Sucesso",
+      "category": "museos",
+      "icon": "🏪",
+      "description": "Mercado moderno con tapas, vinos y comida típica. Ambiente animado en el corazón de Porto.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Praça de Bom Sucesso"
+        },
+        {
+          "icon": "🍷",
+          "text": "Vinos variados"
+        },
+        {
+          "icon": "🥘",
+          "text": "Tapas portuguesas"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Mercado+Bom+Sucesso+Porto"
+    },
+    {
+      "id": 12,
+      "title": "Experimenta el Vino de Porto",
+      "category": "dicas",
+      "icon": "🍷",
+      "description": "¡Visita las bodegas en Vila Nova de Gaia (al otro lado del río)! Taylor's, Sandeman y Graham's tienen tours excelentes con degustaciones incluidas.",
+      "details": [
+        {
+          "icon": "⏰",
+          "text": "Reserva online"
+        },
+        {
+          "icon": "🚶",
+          "text": "10min a pie de la Ribeira"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Mirador de la Victoria",
+      "category": "parques",
+      "icon": "🌄",
+      "description": "¡Vista panorámica increíble sobre Porto! Menos turístico que otros miradores. Perfecto para un café al final de la tarde.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua de São Bento da Vitória"
+        },
+        {
+          "icon": "☕",
+          "text": "Terraza con café"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Miradouro+Vitória+Porto"
+    },
+    {
+      "id": 12,
+      "title": "Cafe Majestic",
+      "category": "restaurantes",
+      "icon": "☕",
+      "description": "Café histórico de 1921, uno de los más bonitos de Europa. Inspiración para Harry Potter. Imperdible para un café con encanto en el centro de Porto.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Santa Catarina, 112"
+        },
+        {
+          "icon": "⏰",
+          "text": "1900-00h00"
+        },
+        {
+          "icon": "🧙‍♂️",
+          "text": "Inspiración Harry Potter"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Café+Majestic+Porto"
+    },
+    {
+      "id": 13,
+      "title": "Café Guaraní",
+      "category": "restaurantes",
+      "icon": "☕",
+      "description": "Café tradicional en el corazón de Porto. Ambiente auténtico y acogedor, ideal para un café rápido o conversación tranquila.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Praça da Liberdade"
+        },
+        {
+          "icon": "☕",
+          "text": "Café tradicional"
+        },
+        {
+          "icon": "🍰",
+          "text": "Dulces caseros"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Café+Guaraní+Porto"
+    },
+    {
+      "id": 14,
+      "title": "Café A Brasileira",
+      "category": "restaurantes",
+      "icon": "☕",
+      "description": "Café histórico con arte brasileña. Ambiente elegante y cultural, punto de encuentro tradicional en la ciudad.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Sá da Bandeira"
+        },
+        {
+          "icon": "🎨",
+          "text": "Arte brasileña"
+        },
+        {
+          "icon": "☕",
+          "text": "Café especial"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Café+A+Brasileira+Porto"
+    },
+    {
+      "id": 15,
+      "title": "Terra",
+      "category": "restaurantes",
+      "icon": "🥗",
+      "description": "Restaurante vegetariano/vegano moderno y creativo. Platos innovadores con productos locales. Perfecto para opciones saludables.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Miguel Bombarda, 475"
+        },
+        {
+          "icon": "🌱",
+          "text": "100% vegetariano"
+        },
+        {
+          "icon": "🍽️",
+          "text": "Cocina creativa"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Terra+Porto+vegetariano"
+    },
+    {
+      "id": 18,
+      "title": "Adega São Nicolau",
+      "category": "restaurantes",
+      "icon": "🍷",
+      "description": "Tasca tradicional de vinos y tapas. Ambiente auténtico de Porto, especializada en vinos del Douro y petiscos portugueses.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua de São Nicolau, 18"
+        },
+        {
+          "icon": "🍷",
+          "text": "Vinos del Douro"
+        },
+        {
+          "icon": "🧀",
+          "text": "Tablas de quesos"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Adega+São+Nicolau+Porto"
+    },
+    {
+      "id": 19,
+      "title": "Casa Guedes",
+      "category": "restaurantes",
+      "icon": "🥖",
+      "description": "Local tradicional famoso por las bifanas. Pan de ajo servido con bifanas suculentas. Una especialidad portuguesa auténtica.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Praça da Batalha"
+        },
+        {
+          "icon": "🥖",
+          "text": "Especialidad: Bifanas"
+        },
+        {
+          "icon": "🧄",
+          "text": "Pan de ajo casero"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Casa+Guedes+Porto"
+    },
+    {
+      "id": 20,
+      "title": "Brasão",
+      "category": "restaurantes",
+      "icon": "🥪",
+      "description": "Excelente Francesinha. Ambiente moderno con platos portugueses. Opción sólida en el centro de Porto.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua de Sá da Bandeira"
+        },
+        {
+          "icon": "🥪",
+          "text": "Francesinha tradicional"
+        },
+        {
+          "icon": "🍺",
+          "text": "Cervejas artesanais"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Brasão+Porto"
+    },
+    {
+      "id": 21,
+      "title": "Bacalhoeiro",
+      "category": "restaurantes",
+      "icon": "🐟",
+      "description": "Especialista en bacalhau. Platos tradicionales portugueses con pescado salgado. Ambiente familiar y auténtico.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua do Almada"
+        },
+        {
+          "icon": "🐟",
+          "text": "Especialidad: Bacalhau"
+        },
+        {
+          "icon": "🥘",
+          "text": "Pratos tradicionais"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Bacalhoeiro+Porto"
+    },
+    {
+      "id": 22,
+      "title": "Catedral de Porto",
+      "category": "museos",
+      "icon": "⛪",
+      "description": "Catedral gótica del siglo XII, corazón religioso de Porto. Sube a la torre para vistas increíbles. No te pierdas el claustro gótico.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Terreiro da Sé"
+        },
+        {
+          "icon": "🏛️",
+          "text": "Siglo XII"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Catedral+Porto"
+    },
+    {
+      "id": 21,
+      "title": "Claustro de la Catedral",
+      "category": "museos",
+      "icon": "🏛️",
+      "description": "Claustro gótico del siglo XIV con azulejos azules. Uno de los más bonitos de Portugal. Jardín tranquilo en el centro histórico.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Junto a la Catedral"
+        },
+        {
+          "icon": "🎨",
+          "text": "Azulejos del siglo XVIII"
+        },
+        {
+          "icon": "🌿",
+          "text": "Jardín interior"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Claustro+Catedral+Porto"
+    },
+    {
+      "id": 22,
+      "title": "Paço Episcopal",
+      "category": "museos",
+      "icon": "🏛️",
+      "description": "Palacio episcopal barroco del siglo XVIII. Arquitectura impresionante y jardines históricos. Visita guiada recomendada.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Paço Episcopal, Porto"
+        },
+        {
+          "icon": "🏛️",
+          "text": "Barroco del siglo XVIII"
+        },
+        {
+          "icon": "🌳",
+          "text": "Jardines históricos"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Paço+Episcopal+Porto"
+    },
+    {
+      "id": 23,
+      "title": "Bairro do Barredo",
+      "category": "parques",
+      "icon": "🏘️",
+      "description": "Barrio histórico con calles estrechas y casas coloridas. Sube la Escalera de las Verdades para vistas únicas. Auténtico Porto.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Centro Histórico"
+        },
+        {
+          "icon": "🪜",
+          "text": "Escalera de las Verdades"
+        },
+        {
+          "icon": "🏠",
+          "text": "Casas tradicionales"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Bairro+Barredo+Porto"
+    },
+    {
+      "id": 24,
+      "title": "Palacio de la Bolsa",
+      "category": "museos",
+      "icon": "🏛️",
+      "description": "Palacio neoclásico del siglo XIX, antigua bolsa de comercio. Salón árabe impresionante. Visita obligatoria en Porto.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Ferreira Borges"
+        },
+        {
+          "icon": "🕌",
+          "text": "Salón Árabe espectacular"
+        },
+        {
+          "icon": "🏛️",
+          "text": "Neoclásico del XIX"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Palacio+Bolsa+Porto"
+    },
+    {
+      "id": 25,
+      "title": "Iglesia de San Francisco",
+      "category": "museos",
+      "icon": "⛪",
+      "description": "Iglesia gótica con interior de oro tallado increíble. Una de las más ricas de Portugal. No te pierdas las catacumbas.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua do Infante D. Henrique"
+        },
+        {
+          "icon": "✨",
+          "text": "Interior de oro"
+        },
+        {
+          "icon": "💀",
+          "text": "Catacumbas visitables"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Iglesia+San+Francisco+Porto"
+    },
+    {
+      "id": 26,
+      "title": "Iglesia de los Clérigos",
+      "category": "museos",
+      "icon": "🔔",
+      "description": "Torre barroca emblemática de Porto. Sube los 240 escalones para las mejores vistas de la ciudad. Símbolo de la Invicta.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua São Miguel"
+        },
+        {
+          "icon": "🪜",
+          "text": "240 escalones"
+        },
+        {
+          "icon": "🌅",
+          "text": "Mejor vista de Porto"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Torre+Clérigos+Porto"
+    },
+    {
+      "id": 27,
+      "title": "Iglesia de San Ildefonso",
+      "category": "museos",
+      "icon": "⛪",
+      "description": "Iglesia barroca con fachada de azulejos azules y blancos. Dos torres imponentes en el corazón de la ciudad.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua de São Ildefonso"
+        },
+        {
+          "icon": "🎨",
+          "text": "Azulejos barrocos"
+        },
+        {
+          "icon": "🔔",
+          "text": "Dos torres gemelas"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Iglesia+San+Ildefonso+Porto"
+    },
+    {
+      "id": 28,
+      "title": "Capela de las Almas",
+      "category": "museos",
+      "icon": "⛪",
+      "description": "Capela cubierta de azulejos que narran la vida de San Francisco. Una de las más fotogénicas de Porto. Gratis.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Santa Catarina"
+        },
+        {
+          "icon": "📸",
+          "text": "Muy fotogénica"
+        },
+        {
+          "icon": "🎨",
+          "text": "Azulejos narrativos"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Capela+Almas+Porto"
+    },
+    {
+      "id": 29,
+      "title": "Tranvía Histórico de Porto",
+      "category": "dicas",
+      "icon": "🚋",
+      "description": "Tranvía amarillo histórico de 1872. Paseo turístico por el centro de Porto. Experiencia única y fotogénica.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Parada en Infante"
+        },
+        {
+          "icon": "⏰",
+          "text": "25 minutos"
+        },
+        {
+          "icon": "📸",
+          "text": "Muy fotogénico"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Tranvía+Histórico+Porto"
+    },
+    {
+      "id": 30,
+      "title": "Funicular dos Guindais",
+      "category": "dicas",
+      "icon": "🚡",
+      "description": "Funicular que conecta la parte alta de Porto con la Ribeira. Vistas panorámicas durante la subida. Experiencia histórica y fotogénica.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua dos Guindais"
+        },
+        {
+          "icon": "🚡",
+          "text": "Conexión Ribeira-Parte Alta"
+        },
+        {
+          "icon": "📸",
+          "text": "Vistas panorámicas"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Funicular+Guindais+Porto"
+    },
+    {
+      "id": 31,
+      "title": "Teleférico de Gaia",
+      "category": "dicas",
+      "icon": "🚠",
+      "description": "Teleférico sobre el río Douro con vistas a Porto y las 6 puentes. Paseo panorámico entre Gaia y la margen del río.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Vila Nova de Gaia"
+        },
+        {
+          "icon": "🌉",
+          "text": "6 puentes visibles"
+        },
+        {
+          "icon": "📸",
+          "text": "Vistas aéreas"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Teleférico+Gaia"
+    },
+    {
+      "id": 32,
+      "title": "Estación de São Bento",
+      "category": "museos",
+      "icon": "🚂",
+      "description": "¡Imperdible! 20,000 azulejos históricos que cuentan la historia de Portugal. Una de las estaciones más bonitas del mundo. Entrada gratuita.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Praça Almeida Garrett"
+        },
+        {
+          "icon": "🎨",
+          "text": "20,000 azulejos"
+        },
+        {
+          "icon": "📸",
+          "text": "Muy fotogénica"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Estación+São+Bento+Porto"
+    },
+    {
+      "id": 31,
+      "title": "Rua das Flores",
+      "category": "parques",
+      "icon": "🌸",
+      "description": "Calle histórica llena de tiendas locales, cafés y galerías de arte. Perfecta para pasear, comprar souvenirs auténticos y sentir la atmósfera del Porto tradicional.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Centro Histórico"
+        },
+        {
+          "icon": "🛍️",
+          "text": "Tiendas locales"
+        },
+        {
+          "icon": "☕",
+          "text": "Cafés tradicionales"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Rua+Flores+Porto"
+    },
+    {
+      "id": 32,
+      "title": "Mirador Serra do Pilar",
+      "category": "parques",
+      "icon": "🌅",
+      "description": "¡La mejor vista de Porto! Sube al Monasterio de Serra do Pilar para una vista de 360° sobre la ciudad, el río y los 6 puentes. Imperdible al atardecer.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Largo Aviz, Vila Nova de Gaia"
+        },
+        {
+          "icon": "🌅",
+          "text": "Mejor al atardecer"
+        },
+        {
+          "icon": "🌉",
+          "text": "6 puentes visibles"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Serra+do+Pilar+Porto"
+    },
+    {
+      "id": 33,
+      "title": "Mirador da Virtude",
+      "category": "parques",
+      "icon": "🌄",
+      "description": "Mirador secreto con vistas espectaculares sobre el río Duero y el barrio de la Ribeira. Menos turístico, más auténtico.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua da Virtude"
+        },
+        {
+          "icon": "🌊",
+          "text": "Vista al río"
+        },
+        {
+          "icon": "🏘️",
+          "text": "Ribeira abajo"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Mirador+Virtude+Porto"
+    },
+    {
+      "id": 34,
+      "title": "Mirador dos Guindais",
+      "category": "parques",
+      "icon": "🌅",
+      "description": "Ascensor panorámico con vistas increíbles. Conecta la parte alta con la ribeira. Vale la pena para las fotos.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua dos Guindais"
+        },
+        {
+          "icon": "🚡",
+          "text": "Ascensor panorámico"
+        },
+        {
+          "icon": "📸",
+          "text": "Vistas espectaculares"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Guindais+Porto"
+    },
+    {
+      "id": 35,
+      "title": "Mirador da Fontainhas",
+      "category": "parques",
+      "icon": "🎨",
+      "description": "Barrio de casas coloridas con vistas al río Duero. Zona boémia con artistas y cafés. Perfecto para fotos al atardecer.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Rua Fontainhas"
+        },
+        {
+          "icon": "🏠",
+          "text": "Casas coloridas"
+        },
+        {
+          "icon": "🎨",
+          "text": "Zona de artistas"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Fontainhas+Porto"
+    },
+    {
+      "id": 36,
+      "title": "Mirador del Jardín de Morro",
+      "category": "parques",
+      "icon": "🌳",
+      "description": "Jardín tranquilo con vistas panorámicas de la ciudad y el río. Perfecto para un picnic relajante con vistas increíbles.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Jardim do Morro"
+        },
+        {
+          "icon": "🌳",
+          "text": "Jardín pacífico"
+        },
+        {
+          "icon": "🧺",
+          "text": "Perfecto para picnic"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Jardim+Morro+Porto"
+    },
+    {
+      "id": 37,
+      "title": "Zona Vinícola del Duero",
+      "category": "dicas",
+      "icon": "🍷",
+      "description": "Excursión de día completo a la región vinícola. Quintas históricas, degustaciones de vino y paisajes espectaculares. Ideal en septiembre.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "A 1h de Porto"
+        },
+        {
+          "icon": "🍇",
+          "text": "Vino del Duero"
+        },
+        {
+          "icon": "🏞️",
+          "text": "Paisajes increíbles"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Valle+Douro+tours"
+    },
+    {
+      "id": 38,
+      "title": "Lugares Cercanos para Visitar",
+      "category": "dicas",
+      "icon": "🗺️",
+      "description": "Si tienes tiempo, visita estas ciudades cercanas: Guimarães (cuna de Portugal), Braga (ciudad religiosa), Aveiro (Venecia de Portugal). Todas a menos de 1h.",
+      "details": [
+        {
+          "icon": "🏰",
+          "text": "Guimarães: 40min"
+        },
+        {
+          "icon": "⛪",
+          "text": "Braga: 45min"
+        },
+        {
+          "icon": "⛵",
+          "text": "Aveiro: 1h"
+        },
+        {
+          "icon": "🚆",
+          "text": "Tren o bus fácil"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Guimarães+desde+Porto"
+    },
+    {
+      "id": 39,
+      "title": "Portugués Básico",
+      "category": "dicas",
+      "icon": "🗣️",
+      "description": "Frases esenciales para comunicar en portugués. Bom dia/Boa tarde/Boa noite, Obrigado/Obrigada, A conta por favor.",
+      "details": [
+        {
+          "icon": "👋",
+          "text": "Bom dia/Boa tarde/Boa noite"
+        },
+        {
+          "icon": "🙏",
+          "text": "Obrigado/Obrigada"
+        },
+        {
+          "icon": "💰",
+          "text": "A conta, por favor"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Como Pedir Café",
+      "category": "dicas",
+      "icon": "☕",
+      "description": "Tipos de café en Portugal: Café/Cimbalino (solo), Pingado (cortado), Abatanado (solo doble), Meia de leite/Galão (con leche).",
+      "details": [
+        {
+          "icon": "☕",
+          "text": "Café/Cimbalino - Solo"
+        },
+        {
+          "icon": "☕",
+          "text": "Pingado - Cortado"
+        },
+        {
+          "icon": "☕",
+          "text": "Meia de leite - Con leche"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Como Pedir Cerveja",
+      "category": "dicas",
+      "icon": "🍺",
+      "description": "Cómo pedir cerveza en Portugal: Fino (caña), Caneca (jarra), Tulipa (tamaño medio), Cerveja (por nombre).",
+      "details": [
+        {
+          "icon": "🍺",
+          "text": "Fino - Caña"
+        },
+        {
+          "icon": "🍺",
+          "text": "Caneca - Jarra"
+        },
+        {
+          "icon": "🍺",
+          "text": "Tulipa - Tamaño medio"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Souvenirs Típicos",
+      "category": "dicas",
+      "icon": "🛍️",
+      "description": "Recuerdos tradicionales de Portugal: Vino de Oporto, sardinas enlatadas, corcho portugués, azulejos y cerámicas.",
+      "details": [
+        {
+          "icon": "🍷",
+          "text": "Vino de Oporto"
+        },
+        {
+          "icon": "🐟",
+          "text": "Sardinas enlatadas"
+        },
+        {
+          "icon": "🪵",
+          "text": "Corcho portugués"
+        },
+        {
+          "icon": "🎨",
+          "text": "Azulejos y cerámicas"
+        }
+      ]
+    }
+  ]
+}
