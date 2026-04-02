@@ -2,21 +2,21 @@
   "recommendations": [
     {
       "id": 1,
-      "title": "Cantinho do Avillez",
+      "title": "Postigo do Carvão",
       "category": "restaurantes",
       "icon": "🍽️",
-      "description": "Restaurante del chef José Avillez con platos tradicionales portugueses reinventados. Ambiente acogedor y de alta calidad.",
+      "description": "Restaurante con comida tradicional portuguesa",
       "details": [
         {
           "icon": "📍",
-          "text": "Rua Mouzinho da Silveira, 166"
+          "text": "R. da Fonte Taurina 24"
         },
         {
           "icon": "⏰",
           "text": "Reserva recomendada"
         }
       ],
-      "link": "https://www.google.com/maps/search/Cantinho+do+Avillez+Porto"
+      "link": "https://google.com/maps/place/Postigo+do+Carvão,+Rua+da+Fonte+Taurina,+Porto/@41.1406869,-8.6161315,650m/data=!3m1!1e3!4m5!3m4!1s0xd2464e058a94359:0xfdd20e242e54e24d!8m2!3d41.1406587!4d-8.6135029?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D"
     },
     {
       "id": 2,
@@ -230,10 +230,6 @@
           "text": "Rua Santa Catarina, 112"
         },
         {
-          "icon": "⏰",
-          "text": "1900-00h00"
-        },
-        {
           "icon": "🧙‍♂️",
           "text": "Inspiración Harry Potter"
         }
@@ -267,15 +263,11 @@
       "title": "Café A Brasileira",
       "category": "restaurantes",
       "icon": "☕",
-      "description": "Café histórico con arte brasileña. Ambiente elegante y cultural, punto de encuentro tradicional en la ciudad.",
+      "description": "Café histórico patrimonial. Ambiente elegante y cultural, punto de encuentro tradicional en la ciudad.",
       "details": [
         {
           "icon": "📍",
           "text": "Rua Sá da Bandeira"
-        },
-        {
-          "icon": "🎨",
-          "text": "Arte brasileña"
         },
         {
           "icon": "☕",
@@ -311,7 +303,7 @@
       "title": "Adega São Nicolau",
       "category": "restaurantes",
       "icon": "🍷",
-      "description": "Tasca tradicional de vinos y tapas. Ambiente auténtico de Porto, especializada en vinos del Douro y petiscos portugueses.",
+      "description": "Tasca tradicional de vinos y comida tradicional. Ambiente auténtico de Porto, especializada en vinos del Douro y petiscos portugueses.",
       "details": [
         {
           "icon": "📍",
@@ -322,8 +314,8 @@
           "text": "Vinos del Douro"
         },
         {
-          "icon": "🧀",
-          "text": "Tablas de quesos"
+          "icon": "🍽️",
+          "text": "Comida tradicional"
         }
       ],
       "link": "https://www.google.com/maps/search/Adega+São+Nicolau+Porto"
@@ -337,7 +329,7 @@
       "details": [
         {
           "icon": "📍",
-          "text": "Praça da Batalha"
+          "text": "Praça dos Poveiros 130"
         },
         {
           "icon": "🥖",
@@ -345,7 +337,7 @@
         },
         {
           "icon": "🧄",
-          "text": "Pan de ajo casero"
+          "text": "Caldo verde"
         }
       ],
       "link": "https://www.google.com/maps/search/Casa+Guedes+Porto"
@@ -359,7 +351,7 @@
       "details": [
         {
           "icon": "📍",
-          "text": "Rua de Sá da Bandeira"
+          "text": "R. de Ramalho Ortigão 28"
         },
         {
           "icon": "🥪",
@@ -381,7 +373,7 @@
       "details": [
         {
           "icon": "📍",
-          "text": "Rua do Almada"
+          "text": "Av. de Diogo Leite 74"
         },
         {
           "icon": "🐟",
@@ -473,7 +465,7 @@
         },
         {
           "icon": "🏠",
-          "text": "Casas tradicionales"
+          "text": "Barrio medieval"
         }
       ],
       "link": "https://www.google.com/maps/search/Bairro+Barredo+Porto"
@@ -535,7 +527,7 @@
         },
         {
           "icon": "🪜",
-          "text": "240 escalones"
+          "text": "225 escalones"
         },
         {
           "icon": "🌅",
@@ -597,15 +589,15 @@
       "details": [
         {
           "icon": "📍",
-          "text": "Parada en Infante"
+          "text": "Línea número 1 (Ribeira)"
+        },
+        {
+          "icon": "📍",
+          "text": "ínea número 18 (Centro)"
         },
         {
           "icon": "⏰",
           "text": "25 minutos"
-        },
-        {
-          "icon": "📸",
-          "text": "Muy fotogénico"
         }
       ],
       "link": "https://www.google.com/maps/search/Tranvía+Histórico+Porto"
@@ -663,7 +655,7 @@
       "details": [
         {
           "icon": "📍",
-          "text": "Praça Almeida Garrett"
+          "text": "Almeida Garrett"
         },
         {
           "icon": "🎨",
@@ -693,7 +685,7 @@
         },
         {
           "icon": "☕",
-          "text": "Cafés tradicionales"
+          "text": "Cafés con encanto"
         }
       ],
       "link": "https://www.google.com/maps/search/Rua+Flores+Porto"
@@ -765,28 +757,6 @@
       "link": "https://www.google.com/maps/search/Guindais+Porto"
     },
     {
-      "id": 35,
-      "title": "Mirador da Fontainhas",
-      "category": "parques",
-      "icon": "🎨",
-      "description": "Barrio de casas coloridas con vistas al río Duero. Zona boémia con artistas y cafés. Perfecto para fotos al atardecer.",
-      "details": [
-        {
-          "icon": "📍",
-          "text": "Rua Fontainhas"
-        },
-        {
-          "icon": "🏠",
-          "text": "Casas coloridas"
-        },
-        {
-          "icon": "🎨",
-          "text": "Zona de artistas"
-        }
-      ],
-      "link": "https://www.google.com/maps/search/Fontainhas+Porto"
-    },
-    {
       "id": 36,
       "title": "Mirador del Jardín de Morro",
       "category": "parques",
@@ -803,32 +773,10 @@
         },
         {
           "icon": "🧺",
-          "text": "Perfecto para picnic"
+          "text": "Imperdible puesta de sol"
         }
       ],
       "link": "https://www.google.com/maps/search/Jardim+Morro+Porto"
-    },
-    {
-      "id": 37,
-      "title": "Zona Vinícola del Duero",
-      "category": "dicas",
-      "icon": "🍷",
-      "description": "Excursión de día completo a la región vinícola. Quintas históricas, degustaciones de vino y paisajes espectaculares. Ideal en septiembre.",
-      "details": [
-        {
-          "icon": "📍",
-          "text": "A 1h de Porto"
-        },
-        {
-          "icon": "🍇",
-          "text": "Vino del Duero"
-        },
-        {
-          "icon": "🏞️",
-          "text": "Paisajes increíbles"
-        }
-      ],
-      "link": "https://www.google.com/maps/search/Valle+Douro+tours"
     },
     {
       "id": 38,
@@ -853,15 +801,14 @@
           "icon": "🚆",
           "text": "Tren o bus fácil"
         }
-      ],
-      "link": "https://www.google.com/maps/search/Guimarães+desde+Porto"
+      ]
     },
     {
       "id": 39,
       "title": "Portugués Básico",
       "category": "dicas",
       "icon": "🗣️",
-      "description": "Frases esenciales para comunicar en portugués. Bom dia/Boa tarde/Boa noite, Obrigado/Obrigada, A conta por favor.",
+      "description": "Frases esenciales para comunicar en portugués.",
       "details": [
         {
           "icon": "👋",
@@ -882,7 +829,7 @@
       "title": "Como Pedir Café",
       "category": "dicas",
       "icon": "☕",
-      "description": "Tipos de café en Portugal: Café/Cimbalino (solo), Pingado (cortado), Abatanado (solo doble), Meia de leite/Galão (con leche).",
+      "description": "Tipos de café en Portugal:",
       "details": [
         {
           "icon": "☕",
@@ -903,7 +850,7 @@
       "title": "Como Pedir Cerveja",
       "category": "dicas",
       "icon": "🍺",
-      "description": "Cómo pedir cerveza en Portugal: Fino (caña), Caneca (jarra), Tulipa (tamaño medio), Cerveja (por nombre).",
+      "description": "Cómo pedir cerveza en Portugal: ",
       "details": [
         {
           "icon": "🍺",
