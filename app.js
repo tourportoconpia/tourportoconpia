@@ -1,5 +1,5 @@
 let allRecommendations = [];
-let currentCategory = 'all';
+let currentCategory = 'restaurantes';
 
 async function loadRecommendations() {
     try {
@@ -67,7 +67,8 @@ function getCategoryLabel(category) {
         'restaurantes': 'Restaurante',
         'museos': 'Museo',
         'parques': 'Parque',
-        'dicas': 'Consejo'
+        'dicas': 'Consejo',
+        'ninos': 'Niños'
     };
     return labels[category] || category;
 }

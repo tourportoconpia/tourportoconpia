@@ -74,21 +74,29 @@
     },
     {
       "id": 5,
-      "title": "Paseo en Barco por el Duero",
+      "title": "Paseo en barco de los 6 puentes",
       "category": "dicas",
       "icon": "⛵",
-      "description": "¡Experiencia imperdible! ¡Ve los 6 puentes de Porto desde el río! Hay opciones de 50min (Puentes) o día completo (Valle del Duero).",
+      "description": "¡Experiencia imperdible! ¡Ve los 6 puentes de Porto desde el río!",
       "details": [
         {
           "icon": "📍",
-          "text": "Cais da Ribeira"
+          "text": "Ribeira - Douro Acima"
+        },
+        {
+          "icon": "✨",
+          "text": "Con ticket de descuento disponible"
+        },
+        {
+          "icon": "👉",
+          "text": "Adultos €18 & Niños €10 (hasta 12 años)"
         },
         {
           "icon": "⏰",
-          "text": "Varias empresas disponibles"
+          "text": "50min (6 Puentes)"
         }
       ],
-      "link": "https://www.google.com/maps/search/Paseo+Barco+Douro+Porto"
+      "link": "https://www.google.com/maps/place/Douro+Acima/@41.1405764,-8.6136531,162m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2464e0edc0e65f:0xa27976015643192b!8m2!3d41.1405754!4d-8.6130094!16s%2Fg%2F1thqj0th?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D"
     },
     {
       "id": 7,
@@ -890,6 +898,135 @@
           "text": "Azulejos y cerámicas"
         }
       ]
+    },
+    {
+      "id": 43,
+      "title": "Horarios de la Cocina Tradicional",
+      "category": "dicas",
+      "icon": "⏰",
+      "description": "Recuerda que la cocina tradicional funciona de las 12 a 15 y de las 19 a las 22.",
+      "details": [
+        {
+          "icon": "🕐",
+          "text": "Almuerzo: 12:00 - 15:00"
+        },
+        {
+          "icon": "🕖",
+          "text": "Cena: 19:00 - 22:00"
+        },
+        {
+          "icon": "💡",
+          "text": "Fuera de estos horarios muchos restaurantes cierran"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Neonia Porto",
+      "category": "ninos",
+      "icon": "🎮",
+      "description": "Experiencia inmersiva de luz y sonido en el corazón de Porto.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Centro de Porto"
+        },
+        {
+          "icon": "✨",
+          "text": "Experiencia digital"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Neonia+Porto"
+    },
+    {
+      "id": 45,
+      "title": "World of Discoveries",
+      "category": "ninos",
+      "icon": "🚢",
+      "description": "Complejo de museos interactivos",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Cais da Ribeira"
+        },
+        {
+          "icon": "🎭",
+          "text": "Experiencia inmersiva"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/World+of+Discoveries+Porto"
+    },
+    {
+      "id": 46,
+      "title": "Zoológico Santo Inácio",
+      "category": "ninos",
+      "icon": "🦁",
+      "description": "Zoológico con gran variedad de animales y experiencias educativas.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Vila Nova de Gaia"
+        },
+        {
+          "icon": "🐾",
+          "text": "Más de 800 animales"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Zoológico+Santo+Inácio"
+    },
+    {
+      "id": 47,
+      "title": "Estadio y Museo FC Porto",
+      "category": "ninos",
+      "icon": "⚽",
+      "description": "Tour por el estadio Dragão y museo del club de fútbol.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Estadio do Dragão"
+        },
+        {
+          "icon": "🏆",
+          "text": "Historia del FC Porto"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Estadio+Dragão+Porto"
+    },
+    {
+      "id": 48,
+      "title": "Sealife",
+      "category": "ninos",
+      "icon": "🐠",
+      "description": "Acuario con túnel submarino y exhibiciones marinas.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Vila Nova de Gaia"
+        },
+        {
+          "icon": "🦈",
+          "text": "Túnel submarino"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Sealife+Porto"
+    },
+    {
+      "id": 49,
+      "title": "Museo Infante D. Henrique",
+      "category": "ninos",
+      "icon": "🏛️",
+      "description": "Museo dedicado al infante que patrocinó los descubrimientos portugueses.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "Cais da Ribeira"
+        },
+        {
+          "icon": "⚓",
+          "text": "Historia naval"
+        }
+      ],
+      "link": "https://maps.app.goo.gl/svfURonTGdns9nD28"
     }
   ]
 }
