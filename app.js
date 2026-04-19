@@ -215,8 +215,12 @@ function openExtraModal(id) {
                 <div class="price-row">
                     <span class="price-label">Adulto:</span>
                     <span class="price-value">
-                        <span class="price-original">${info.adultOriginal}</span>
-                        <span class="price-discount">${info.adultDiscount}</span>
+                        <span class="price-original">
+                            <span class="sr-only">Precio original: </span>${info.adultOriginal}
+                        </span>
+                        <span class="price-discount">
+                            <span class="sr-only">Precio con descuento: </span>${info.adultDiscount}
+                        </span>
                     </span>
                 </div>
                 ${childHTML}

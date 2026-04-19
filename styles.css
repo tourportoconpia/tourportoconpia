@@ -485,8 +485,8 @@ body {
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-light);
+    font-weight: 700;
+    color: var(--text-dark);
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -739,11 +739,11 @@ body {
 .card-category {
     display: inline-block;
     padding: 4px 12px;
-    background: var(--bg-light);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 20px;
     font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--text-light);
+    font-weight: 700;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -1133,8 +1133,8 @@ footer p {
 }
 
 .price-label {
-    font-weight: 500;
-    color: var(--text-light);
+    font-weight: 600;
+    color: var(--text-dark);
 }
 
 .price-value {
@@ -1148,7 +1148,7 @@ footer p {
 
 .price-original {
     text-decoration: line-through;
-    color: #999;
+    color: #666;
     font-size: 0.9rem;
     font-weight: 400;
 }
