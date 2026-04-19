@@ -73,11 +73,11 @@
             </div>
 
             <div class="category-tabs">
-                <button class="tab-btn" data-category="all" aria-pressed="false">Todas</button>
                 <button class="tab-btn active" data-category="restaurantes" aria-pressed="true">Restaurantes</button>
                 <button class="tab-btn" data-category="museos" aria-pressed="false">Museos</button>
                 <button class="tab-btn" data-category="parques" aria-pressed="false">Parques</button>
                 <button class="tab-btn" data-category="dicas" aria-pressed="false">Consejos</button>
+                <button class="tab-btn" data-category="descuentos" aria-pressed="false">Descuentos</button>
                 <button class="tab-btn" data-category="ninos" aria-pressed="false">Con niños</button>
             </div>
 
@@ -132,13 +132,11 @@
                     </div>
                     <div class="tour-content">
                         <p class="tour-description">
-                            Explora la zona más emblemática de Porto junto al río Duero. Puentes históricas, bodegas de vino 
-                            y las mejores vistas de la ciudad.
+                            Explora la zona más emblemática de Porto junto al río Duero. Sumérgete en el barrio medieval.
                         </p>
                         <ul class="tour-highlights">
                             <li>🌉 Puente Luis I</li>
                             <li>🏘️ Barrio de la Ribeira</li>
-                            <li>🍷 Vistas de las bodegas</li>
                             <li>📸 Puntos fotográficos únicos</li>
                         </ul>
                         <div class="tour-details">
@@ -233,6 +231,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Price Modal -->
+    <div id="price-modal" class="price-modal" role="dialog" aria-modal="true" aria-label="Información adicional">
+        <div class="price-modal-content">
+            <button class="modal-close" onclick="closeExtraModal()" aria-label="Cerrar">×</button>
+            <div id="price-modal-content"></div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

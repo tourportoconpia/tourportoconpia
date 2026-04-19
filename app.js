@@ -1,5 +1,6 @@
 let allRecommendations = [];
 let currentCategory = 'restaurantes';
+let lastFocusedElement = null;
 
 async function loadRecommendations() {
     try {
@@ -46,6 +47,11 @@ function createRecommendationCard(rec) {
             </a>
         </div>` : '';
     
+    const extraButtonHTML = rec.extraInfo ? 
+        `<div class="card-price">
+            <button class="btn-price" onclick="openExtraModal(${rec.id})">ℹ️ Ver más</button>
+        </div>` : '';
+    
     return `
         <div class="recommendation-card" data-category="${rec.category}">
             <div class="card-header">
@@ -57,6 +63,7 @@ function createRecommendationCard(rec) {
             </div>
             <p class="card-description">${rec.description}</p>
             ${detailsHTML ? `<div class="card-details">${detailsHTML}</div>` : ''}
+            ${extraButtonHTML}
             ${linkHTML}
         </div>
     `;
@@ -68,7 +75,8 @@ function getCategoryLabel(category) {
         'museos': 'Museo',
         'parques': 'Parque',
         'dicas': 'Consejo',
-        'ninos': 'Niños'
+        'ninos': 'Niños',
+        'descuentos': 'Descuentos'
     };
     return labels[category] || category;
 }
@@ -168,10 +176,105 @@ function trackBookingClicks() {
     });
 }
 
+function openExtraModal(id) {
+    const item = allRecommendations.find(rec => rec.id === id);
+    if (!item || !item.extraInfo) return;
+    
+    // Save last focused element for accessibility
+    lastFocusedElement = document.activeElement;
+    
+    const modal = document.getElementById('price-modal');
+    const content = document.getElementById('price-modal-content');
+    
+    const info = item.extraInfo;
+    
+    if (info.type === 'price') {
+        let childHTML = '';
+        
+        if (info.child4_12) {
+            childHTML += `
+                <div class="price-row">
+                    <span class="price-label">Niños (4-12):</span>
+                    <span class="price-value">${info.child4_12}</span>
+                </div>
+            `;
+        }
+        
+        if (info.child0_3) {
+            childHTML += `
+                <div class="price-row">
+                    <span class="price-label">Niños (0-3):</span>
+                    <span class="price-value">${info.child0_3}</span>
+                </div>
+            `;
+        }
+        
+        content.innerHTML = `
+            <h2>${info.title}</h2>
+            <div class="price-details">
+                <div class="price-row">
+                    <span class="price-label">Adulto:</span>
+                    <span class="price-value">
+                        <span class="price-original">${info.adultOriginal}</span>
+                        <span class="price-discount">${info.adultDiscount}</span>
+                    </span>
+                </div>
+                ${childHTML}
+                <div class="price-note">
+                    <p>💡 ${info.discountNote}</p>
+                </div>
+            </div>
+        `;
+    } else {
+        // Generic text content for other types
+        content.innerHTML = `
+            <h2>${info.title || item.title}</h2>
+            <div class="price-details">
+                <p>${info.content || ''}</p>
+            </div>
+        `;
+    }
+    
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Focus management for accessibility
+    const closeBtn = modal.querySelector('.modal-close');
+    if (closeBtn) {
+        closeBtn.focus();
+    }
+}
+
+function closeExtraModal() {
+    const modal = document.getElementById('price-modal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+    
+    // Return focus to last focused element for accessibility
+    if (lastFocusedElement) {
+        lastFocusedElement.focus();
+        lastFocusedElement = null;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadRecommendations();
     setupCategoryTabs();
     setupSmoothScroll();
     trackReviewClicks();
     trackBookingClicks();
+    
+    // Close modal on background click
+    document.getElementById('price-modal').addEventListener('click', (e) => {
+        if (e.target.id === 'price-modal') {
+            closeExtraModal();
+        }
+    });
+    
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeExtraModal();
+        }
+    });
 });
