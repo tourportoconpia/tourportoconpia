@@ -1061,6 +1061,50 @@
         }
       ],
       "link": "https://maps.app.goo.gl/svfURonTGdns9nD28"
+    },
+    {
+      "id": 50,
+      "title": "Abadia",
+      "category": "restaurantes",
+      "icon": "🍽️",
+      "description": "Especialista en bacalhau y Tripas à Moda do Porto. Platos tradicionales portugueses.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "R. do Ateneu Comercial do Porto 22"
+        },
+        {
+          "icon": "🐟",
+          "text": "Especialidad: Bacalhau, Tripas à Moda do Porto, Polvo à Lagareiro "
+        },
+        {
+          "icon": "🥘",
+          "text": "Pratos tradicionais"
+        }
+      ],
+      "link": "https://www.google.com/maps/place/Restaurante+Abadia+do+Porto/@41.1479845,-8.6103769,865m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2464e51e3695a9:0xc329c61f23de839e!8m2!3d41.1479805!4d-8.607802!16s%2Fg%2F1tslk_ms?hl=pt-PT&entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+    },
+        {
+      "id": 50,
+      "title": "O Buraco",
+      "category": "restaurantes",
+      "icon": "🍽️",
+      "description": "Platos tradicionales portugueses.",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "R. do Bolhão 95"
+        },
+        {
+          "icon": "🐟",
+          "text": "Especialidad: Tripas à Moda do Porto, Arroz de pato "
+        },
+        {
+          "icon": "🥘",
+          "text": "Pratos tradicionais"
+        }
+      ],
+      "link": "https://www.google.com/maps/place/O+Buraco/@41.1511533,-8.6100761,865m/data=!3m3!1e3!4b1!5s0xd2464fae33d5931:0x2bfad9a5c1bb9e6a!4m6!3m5!1s0xd2464fae39f1703:0xda3380362a93cd0b!8m2!3d41.1511493!4d-8.6075012!16s%2Fg%2F1v0lm18t?hl=pt-PT&entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
     }
   ]
 }
