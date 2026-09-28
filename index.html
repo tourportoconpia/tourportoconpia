@@ -60,24 +60,49 @@
         </div>
     </section>
 
-    <section class="recommendations">
+    <section class="recommendations" id="recommendations">
         <div class="container">
             <div class="section-header">
                 <h2>Mis Recomendaciones en Porto</h2>
-                <p>He seleccionado cuidadosamente los mejores lugares para ti</p>
+                <p id="recommendations-subtitle">Elige una categoría para descubrir mis lugares favoritos</p>
             </div>
 
-            <div class="category-tabs">
-                <button class="tab-btn active" data-category="restaurantes" aria-pressed="true">Restaurantes</button>
-                <button class="tab-btn" data-category="museos" aria-pressed="false">Museos</button>
-                <button class="tab-btn" data-category="parques" aria-pressed="false">Parques</button>
-                <button class="tab-btn" data-category="dicas" aria-pressed="false">Consejos</button>
-                <button class="tab-btn" data-category="descuentos" aria-pressed="false">Descuentos</button>
-                <button class="tab-btn" data-category="ninos" aria-pressed="false">Con niños</button>
+            <!-- Vista principal de categorías en cards -->
+            <div id="categories-view" class="categories-view">
+                <div id="categories-grid" class="categories-grid">
+                </div>
             </div>
 
-            <div id="recommendations-grid" class="recommendations-grid">
+            <!-- Vista detallada de la categoría seleccionada -->
+            <div id="category-detail-view" class="category-detail-view hidden" aria-live="polite">
+                <div class="category-detail-nav">
+                    <button class="btn-back-categories" id="back-to-categories-btn" onclick="showCategoriesView()" aria-label="Volver a todas las categorías">
+                        <span class="back-icon" aria-hidden="true">←</span>
+                        <span>Volver a categorías</span>
+                    </button>
+                    <div class="category-detail-badge" id="category-active-badge">
+                        <span class="category-badge-icon" id="category-badge-icon">🍽️</span>
+                        <span class="category-badge-title" id="category-badge-title">Restaurantes</span>
+                        <span class="category-badge-count" id="category-badge-count">13 lugares</span>
+                    </div>
+                </div>
+
+                <div id="recommendations-grid" class="recommendations-grid">
+                </div>
+
+                <div class="category-detail-footer">
+                    <button class="btn-back-categories-footer" onclick="showCategoriesView()">
+                        <span class="back-icon" aria-hidden="true">←</span>
+                        <span>Explorar otras categorías</span>
+                    </button>
+                </div>
             </div>
+
+            <!-- Botón flotante para móvil al hacer scroll -->
+            <button id="floating-back-btn" class="floating-back-btn hidden" onclick="showCategoriesView()" aria-label="Volver a categorías">
+                <span class="floating-back-icon">←</span>
+                <span class="floating-back-text">Categorías</span>
+            </button>
         </div>
     </section>
 

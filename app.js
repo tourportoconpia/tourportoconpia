@@ -2,27 +2,209 @@ let allRecommendations = [];
 let currentCategory = 'restaurantes';
 let lastFocusedElement = null;
 
+const CATEGORIES = [
+    {
+        id: 'restaurantes',
+        title: 'Restaurantes',
+        icon: '🍽️',
+        desc: 'Francesinhas, comida tradicional y dulces típicos',
+        countLabel: 'lugares'
+    },
+    {
+        id: 'museos',
+        title: 'Museos y Monumentos',
+        icon: '🏛️',
+        desc: 'Iglesias icónicas, azulejos y patrimonio histórico',
+        countLabel: 'lugares'
+    },
+    {
+        id: 'parques',
+        title: 'Parques y Miradores',
+        icon: '🌳',
+        desc: 'Vistas panorámicas sobre el río Duero y jardines',
+        countLabel: 'lugares'
+    },
+    {
+        id: 'dicas',
+        title: 'Consejos Prácticos',
+        icon: '💡',
+        desc: 'Transporte, trucos locales y excursiones cercanas',
+        countLabel: 'consejos'
+    },
+    {
+        id: 'descuentos',
+        title: 'Descuentos y Ofertas',
+        icon: '🏷️',
+        desc: 'Cruceros por los 6 puentes y promociones',
+        countLabel: 'ofertas'
+    },
+    {
+        id: 'ninos',
+        title: 'Con Niños',
+        icon: '🎈',
+        desc: 'Planes y actividades para toda la familia',
+        countLabel: 'lugares'
+    }
+];
+
+function getCategoryCount(categoryId) {
+    return allRecommendations.filter(rec => 
+        rec.category === categoryId || (categoryId === 'museos' && rec.category === 'locais')
+    ).length;
+}
+
 async function loadRecommendations() {
     try {
         const response = await fetch('data/recommendations.json');
         const data = await response.json();
         allRecommendations = data.recommendations;
-        renderRecommendations();
+        
+        renderCategoryCards();
+        
+        // Si hay una categoría en el hash de la URL, abrirla directamente
+        const hash = window.location.hash;
+        if (hash.startsWith('#categoria=')) {
+            const catId = hash.replace('#categoria=', '');
+            const exists = CATEGORIES.some(c => c.id === catId);
+            if (exists) {
+                openCategory(catId, false);
+            }
+        }
     } catch (error) {
         console.error('Erro ao carregar recomendações:', error);
         displayErrorMessage();
     }
 }
 
+function renderCategoryCards() {
+    const grid = document.getElementById('categories-grid');
+    if (!grid) return;
+    
+    grid.innerHTML = CATEGORIES.map(cat => {
+        const count = getCategoryCount(cat.id);
+        return `
+            <div class="category-card" role="button" tabindex="0" onclick="openCategory('${cat.id}')" onkeydown="handleCategoryKeydown(event, '${cat.id}')" aria-label="Explorar ${cat.title}, ${count} ${cat.countLabel}">
+                <div class="category-card-top">
+                    <div class="category-card-icon-wrapper" aria-hidden="true">${cat.icon}</div>
+                    <span class="category-card-count">${count} ${cat.countLabel}</span>
+                </div>
+                <div class="category-card-body">
+                    <h3 class="category-card-title">${cat.title}</h3>
+                    <p class="category-card-desc">${cat.desc}</p>
+                </div>
+                <div class="category-card-footer">
+                    <span>Explorar</span>
+                    <span class="category-card-arrow" aria-hidden="true">→</span>
+                </div>
+            </div>
+        `;
+    }).join('');
+    
+    animateCategoryCards();
+}
+
+function handleCategoryKeydown(event, categoryId) {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openCategory(categoryId);
+    }
+}
+
+function animateCategoryCards() {
+    const cards = document.querySelectorAll('.category-card');
+    cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(16px)';
+        
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 40);
+    });
+}
+
+function openCategory(categoryId, scrollToTop = true) {
+    currentCategory = categoryId;
+    const cat = CATEGORIES.find(c => c.id === categoryId) || CATEGORIES[0];
+    
+    const categoriesView = document.getElementById('categories-view');
+    const detailView = document.getElementById('category-detail-view');
+    const subtitle = document.getElementById('recommendations-subtitle');
+    
+    if (categoriesView && detailView) {
+        categoriesView.classList.add('hidden');
+        detailView.classList.remove('hidden');
+    }
+    
+    if (subtitle) {
+        subtitle.textContent = `Descubre mis recomendaciones de ${cat.title.toLowerCase()}`;
+    }
+    
+    const badgeIcon = document.getElementById('category-badge-icon');
+    const badgeTitle = document.getElementById('category-badge-title');
+    const badgeCount = document.getElementById('category-badge-count');
+    
+    const count = getCategoryCount(cat.id);
+    if (badgeIcon) badgeIcon.textContent = cat.icon;
+    if (badgeTitle) badgeTitle.textContent = cat.title;
+    if (badgeCount) badgeCount.textContent = `${count} ${cat.countLabel}`;
+    
+    renderRecommendations();
+    
+    if (window.location.hash !== `#categoria=${categoryId}`) {
+        history.pushState({ category: categoryId }, '', `#categoria=${categoryId}`);
+    }
+    
+    if (scrollToTop) {
+        const target = document.getElementById('recommendations');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+}
+
+function showCategoriesView(scrollToTop = true) {
+    const categoriesView = document.getElementById('categories-view');
+    const detailView = document.getElementById('category-detail-view');
+    const subtitle = document.getElementById('recommendations-subtitle');
+    const floatingBtn = document.getElementById('floating-back-btn');
+    
+    if (categoriesView && detailView) {
+        categoriesView.classList.remove('hidden');
+        detailView.classList.add('hidden');
+    }
+    
+    if (floatingBtn) {
+        floatingBtn.classList.add('hidden');
+    }
+    
+    if (subtitle) {
+        subtitle.textContent = 'Elige una categoría para descubrir mis lugares favoritos';
+    }
+    
+    if (window.location.hash.startsWith('#categoria=')) {
+        history.pushState(null, '', window.location.pathname + window.location.search);
+    }
+    
+    if (scrollToTop) {
+        const target = document.getElementById('recommendations');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+}
+
 function renderRecommendations() {
     const grid = document.getElementById('recommendations-grid');
+    if (!grid) return;
     
-    const filtered = currentCategory === 'all' 
-        ? allRecommendations 
-        : allRecommendations.filter(rec => rec.category === currentCategory);
+    const filtered = allRecommendations.filter(rec => 
+        rec.category === currentCategory || (currentCategory === 'museos' && rec.category === 'locais')
+    );
     
     if (filtered.length === 0) {
-        grid.innerHTML = '<p style="text-align: center; color: var(--text-light); grid-column: 1/-1;">Nenhuma recomendação encontrada.</p>';
+        grid.innerHTML = '<p style="text-align: center; color: var(--text-light); grid-column: 1/-1; padding: 40px 0;">No se encontraron recomendaciones en esta categoría.</p>';
         return;
     }
     
@@ -58,7 +240,6 @@ function createRecommendationCard(rec) {
                 <div class="card-icon">${rec.icon}</div>
                 <div class="card-title-section">
                     <h3 class="card-title">${rec.title}</h3>
-                    <span class="card-category">${getCategoryLabel(rec.category)}</span>
                 </div>
             </div>
             <p class="card-description">${rec.description}</p>
@@ -67,18 +248,6 @@ function createRecommendationCard(rec) {
             ${linkHTML}
         </div>
     `;
-}
-
-function getCategoryLabel(category) {
-    const labels = {
-        'restaurantes': 'Restaurante',
-        'museos': 'Museo',
-        'parques': 'Parque',
-        'dicas': 'Consejo',
-        'ninos': 'Niños',
-        'descuentos': 'Descuentos'
-    };
-    return labels[category] || category;
 }
 
 function animateCards() {
@@ -107,21 +276,44 @@ function displayErrorMessage() {
     `;
 }
 
-function setupCategoryTabs() {
-    const tabs = document.querySelectorAll('.tab-btn');
+function setupScrollListeners() {
+    const floatingBtn = document.getElementById('floating-back-btn');
+    const detailView = document.getElementById('category-detail-view');
+    const recommendationsSection = document.getElementById('recommendations');
     
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            tabs.forEach(t => {
-                t.classList.remove('active');
-                t.setAttribute('aria-pressed', 'false');
-            });
-            tab.classList.add('active');
-            tab.setAttribute('aria-pressed', 'true');
-            
-            currentCategory = tab.dataset.category;
-            renderRecommendations();
-        });
+    window.addEventListener('scroll', () => {
+        if (!floatingBtn || !detailView || !recommendationsSection) return;
+        
+        const isDetailActive = !detailView.classList.contains('hidden');
+        if (!isDetailActive) {
+            floatingBtn.classList.add('hidden');
+            return;
+        }
+        
+        const rect = recommendationsSection.getBoundingClientRect();
+        // Mostrar botón flotante si el usuario ha hecho scroll hacia abajo dentro de recomendaciones
+        const isScrolledPast = rect.top < -180 && rect.bottom > 250;
+        
+        if (isScrolledPast) {
+            floatingBtn.classList.remove('hidden');
+        } else {
+            floatingBtn.classList.add('hidden');
+        }
+    }, { passive: true });
+}
+
+function setupHistoryNavigation() {
+    window.addEventListener('popstate', () => {
+        const hash = window.location.hash;
+        if (hash.startsWith('#categoria=')) {
+            const catId = hash.replace('#categoria=', '');
+            const exists = CATEGORIES.some(c => c.id === catId);
+            if (exists) {
+                openCategory(catId, false);
+            }
+        } else {
+            showCategoriesView(false);
+        }
     });
 }
 
@@ -263,7 +455,8 @@ function closeExtraModal() {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadRecommendations();
-    setupCategoryTabs();
+    setupScrollListeners();
+    setupHistoryNavigation();
     setupSmoothScroll();
     trackReviewClicks();
     trackBookingClicks();
