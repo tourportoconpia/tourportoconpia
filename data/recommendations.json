@@ -207,24 +207,6 @@
       ]
     },
     {
-      "id": 11,
-      "title": "Mirador de la Victoria",
-      "category": "parques",
-      "icon": "🌄",
-      "description": "¡Vista panorámica increíble sobre Porto! Menos turístico que otros miradores. Perfecto para un café al final de la tarde.",
-      "details": [
-        {
-          "icon": "📍",
-          "text": "Rua de São Bento da Vitória"
-        },
-        {
-          "icon": "☕",
-          "text": "Terraza con café"
-        }
-      ],
-      "link": "https://www.google.com/maps/search/Miradouro+Vitória+Porto"
-    },
-    {
       "id": 12,
       "title": "Cafe Majestic",
       "category": "cafes",
@@ -309,7 +291,7 @@
       "title": "Casa Guedes",
       "category": "restaurantes",
       "icon": "🥖",
-      "description": "Local tradicional famoso por las bifanas. Pan de ajo servido con bifanas suculentas. Una especialidad portuguesa auténtica.",
+      "description": "Local tradicional famoso por las bifanas. Una especialidad portuguesa auténtica.",
       "details": [
         {
           "icon": "📍",
@@ -577,7 +559,11 @@
         },
         {
           "icon": "📍",
-          "text": "ínea número 18 (Centro)"
+          "text": "Línea número 18 (Centro)"
+        },
+                {
+          "icon": "📍",
+          "text": "Línea número 22 (Centro)"
         },
         {
           "icon": "⏰",

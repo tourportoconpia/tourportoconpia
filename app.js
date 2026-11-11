@@ -286,10 +286,10 @@ function displayErrorMessage() {
 function setupScrollListeners() {
     const floatingBtn = document.getElementById('floating-back-btn');
     const detailView = document.getElementById('category-detail-view');
-    const recommendationsSection = document.getElementById('recommendations');
+    const footerBtn = detailView ? detailView.querySelector('.btn-back-categories-footer') : null;
     
-    window.addEventListener('scroll', () => {
-        if (!floatingBtn || !detailView || !recommendationsSection) return;
+    const updateFloatingButton = () => {
+        if (!floatingBtn || !detailView) return;
         
         const isDetailActive = !detailView.classList.contains('hidden');
         if (!isDetailActive) {
@@ -297,16 +297,23 @@ function setupScrollListeners() {
             return;
         }
         
-        const rect = recommendationsSection.getBoundingClientRect();
-        // Mostrar botón flotante si el usuario ha hecho scroll hacia abajo dentro de recomendaciones
-        const isScrolledPast = rect.top < -180 && rect.bottom > 250;
+        // A barra do topo é sticky, por isso medimos o início da vista da categoria
+        const scrolledPastTop = detailView.getBoundingClientRect().top < -150;
         
-        if (isScrolledPast) {
+        // Verificar se o botão do final da lista já está visível no ecrã
+        const footerRect = footerBtn ? footerBtn.getBoundingClientRect() : null;
+        const footerVisible = footerRect ? footerRect.top < window.innerHeight : false;
+        
+        // Só mostra o botão flutuante se já fez scroll para baixo E o botão do final ainda NÃO apareceu
+        if (scrolledPastTop && !footerVisible) {
             floatingBtn.classList.remove('hidden');
         } else {
             floatingBtn.classList.add('hidden');
         }
-    }, { passive: true });
+    };
+    
+    window.addEventListener('scroll', updateFloatingButton, { passive: true });
+    window.addEventListener('resize', updateFloatingButton, { passive: true });
 }
 
 function setupHistoryNavigation() {
