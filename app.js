@@ -11,6 +11,13 @@ const CATEGORIES = [
         countLabel: 'lugares'
     },
     {
+        id: 'cafes',
+        title: 'Cafés Patrimoniales',
+        icon: '☕',
+        desc: 'Cafeterías históricas y encanto del Porto antiguo',
+        countLabel: 'lugares'
+    },
+    {
         id: 'museos',
         title: 'Museos y Monumentos',
         icon: '🏛️',

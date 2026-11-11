@@ -19,24 +19,6 @@
       "link": "https://google.com/maps/place/Postigo+do+Carvão,+Rua+da+Fonte+Taurina,+Porto/@41.1406869,-8.6161315,650m/data=!3m1!1e3!4m5!3m4!1s0xd2464e058a94359:0xfdd20e242e54e24d!8m2!3d41.1406587!4d-8.6135029?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D"
     },
     {
-      "id": 2,
-      "title": "Café Santiago",
-      "category": "restaurantes",
-      "icon": "🥪",
-      "description": "¡Excelente lugar para probar la famosa Francesinha! Auténtico, tradicional y siempre lleno de locales - eso lo dice todo.",
-      "details": [
-        {
-          "icon": "📍",
-          "text": "Rua de Passos Manuel, 226"
-        },
-        {
-          "icon": "🍽️",
-          "text": "Especialidad: Francesinha"
-        }
-      ],
-      "link": "https://www.google.com/maps/search/Café+Santiago+Porto"
-    },
-    {
       "id": 3,
       "title": "Livraria Lello",
       "category": "museos",
@@ -146,24 +128,6 @@
       ]
     },
     {
-      "id": 8,
-      "title": "Prueba los Pasteles de Nata",
-      "category": "restaurantes",
-      "icon": "🥐",
-      "description": "¡Ve a Manteigaria (Rua Alexandre Braga) - están hechos al momento y siempre calientes! ¡Mejor con canela!",
-      "details": [
-        {
-          "icon": "📍",
-          "text": "Rua Alexandre Braga, 24"
-        },
-        {
-          "icon": "🔥",
-          "text": "Hechos al momento"
-        }
-      ],
-      "link": "https://www.google.com/maps/search/Manteigaria+Porto"
-    },
-    {
       "id": 9,
       "title": "Mercado del Bolhão",
       "category": "museos",
@@ -263,7 +227,7 @@
     {
       "id": 12,
       "title": "Cafe Majestic",
-      "category": "restaurantes",
+      "category": "cafes",
       "icon": "☕",
       "description": "Café histórico de 1921, uno de los más bonitos de Europa. Inspiración para Harry Potter. Imperdible para un café con encanto en el centro de Porto.",
       "details": [
@@ -281,7 +245,7 @@
     {
       "id": 13,
       "title": "Café Guaraní",
-      "category": "restaurantes",
+      "category": "cafes",
       "icon": "☕",
       "description": "Café tradicional en el corazón de Porto. Ambiente auténtico y acogedor, ideal para un café rápido o conversación tranquila.",
       "details": [
@@ -303,7 +267,7 @@
     {
       "id": 14,
       "title": "Café A Brasileira",
-      "category": "restaurantes",
+      "category": "cafes",
       "icon": "☕",
       "description": "Café histórico patrimonial. Ambiente elegante y cultural, punto de encuentro tradicional en la ciudad.",
       "details": [
@@ -317,28 +281,6 @@
         }
       ],
       "link": "https://www.google.com/maps/search/Café+A+Brasileira+Porto"
-    },
-    {
-      "id": 15,
-      "title": "Terra",
-      "category": "restaurantes",
-      "icon": "🥗",
-      "description": "Restaurante vegetariano/vegano moderno y creativo. Platos innovadores con productos locales. Perfecto para opciones saludables.",
-      "details": [
-        {
-          "icon": "📍",
-          "text": "Rua Miguel Bombarda, 475"
-        },
-        {
-          "icon": "🌱",
-          "text": "100% vegetariano"
-        },
-        {
-          "icon": "🍽️",
-          "text": "Cocina creativa"
-        }
-      ],
-      "link": "https://www.google.com/maps/search/Terra+Porto+vegetariano"
     },
     {
       "id": 18,
@@ -1084,7 +1026,7 @@
       ],
       "link": "https://www.google.com/maps/place/Restaurante+Abadia+do+Porto/@41.1479845,-8.6103769,865m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2464e51e3695a9:0xc329c61f23de839e!8m2!3d41.1479805!4d-8.607802!16s%2Fg%2F1tslk_ms?hl=pt-PT&entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
     },
-        {
+    {
       "id": 50,
       "title": "O Buraco",
       "category": "restaurantes",
@@ -1105,6 +1047,42 @@
         }
       ],
       "link": "https://www.google.com/maps/place/O+Buraco/@41.1511533,-8.6100761,865m/data=!3m3!1e3!4b1!5s0xd2464fae33d5931:0x2bfad9a5c1bb9e6a!4m6!3m5!1s0xd2464fae39f1703:0xda3380362a93cd0b!8m2!3d41.1511493!4d-8.6075012!16s%2Fg%2F1v0lm18t?hl=pt-PT&entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      "id": 51,
+      "title": "Douro Sentido",
+      "category": "restaurantes",
+      "icon": "🍽️",
+      "description": "Restaurante con comida tradicional portuguesa",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "R. do Campinho 36-38"
+        },
+        {
+          "icon": "🥘",
+          "text": "Pratos tradicionais"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Douro+Sentido+Porto"
+    },
+    {
+      "id": 52,
+      "title": "Solar Moinho de Vento",
+      "category": "restaurantes",
+      "icon": "🍽️",
+      "description": "Restaurante con comida tradicional portuguesa",
+      "details": [
+        {
+          "icon": "📍",
+          "text": "R. de Sá de Noronha 81"
+        },
+        {
+          "icon": "🥘",
+          "text": "Pratos tradicionais"
+        }
+      ],
+      "link": "https://www.google.com/maps/search/Solar+Moinho+de+Vento+Porto"
     }
   ]
 }
